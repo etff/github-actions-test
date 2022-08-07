@@ -9,7 +9,13 @@ jobs:
       - name: echo a string
         run: eccho "Hello World"
       - name: multiline script
-        run: 
+        run: |
           node -v
           npm -v
+      - name: python Command
+        run: |    
+          import platform
+          print
+          (platform.processor())
+        shell: python
 
